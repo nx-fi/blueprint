@@ -1,6 +1,6 @@
 import { SourceResolver, SourcesMap, SourcesArray } from '@ton-community/func-js';
 import { Cell } from '@ton/core';
-import { ConfigProject } from '@tact-lang/compiler';
+import { ConfigProject } from '@nxfi/tact-compiler';
 
 export type HookParams = {
     userData?: any;

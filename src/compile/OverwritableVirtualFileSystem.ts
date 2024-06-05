@@ -1,4 +1,4 @@
-import { VirtualFileSystem } from '@tact-lang/compiler';
+import { VirtualFileSystem } from '@nxfi/tact-compiler';
 import { resolve, normalize, sep } from 'path';
 import { existsSync, readFileSync } from 'fs';
 

@@ -9,7 +9,7 @@ import path from 'path';
 import { Cell } from '@ton/core';
 import { TACT_ROOT_CONFIG, BUILD_DIR, WRAPPERS_DIR } from '../paths';
 import { CompilerConfig, TactCompilerConfig } from './CompilerConfig';
-import * as Tact from '@tact-lang/compiler';
+import * as Tact from '@nxfi/tact-compiler';
 import { OverwritableVirtualFileSystem } from './OverwritableVirtualFileSystem';
 
 async function getCompilerConfigForContract(name: string): Promise<CompilerConfig> {

@@ -64,6 +64,73 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@nxfi/blueprint@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "@nxfi/blueprint@workspace:."
+  dependencies:
+    "@nxfi/tact-compiler": ^1.3.1-0
+    "@orbs-network/ton-access": ^2.3.3
+    "@ton-community/func-js": ^0.7.0
+    "@ton/core": ^0.56.0
+    "@ton/crypto": ^3.2.0
+    "@ton/ton": ^13.11.0
+    "@tonconnect/sdk": ^2.2.0
+    "@types/inquirer": ^8.2.6
+    "@types/node": ^20.2.5
+    "@types/qrcode-terminal": ^0.12.0
+    arg: ^5.0.2
+    chalk: ^4.1.0
+    dotenv: ^16.1.4
+    inquirer: ^8.2.5
+    prettier: ^3.0.3
+    qrcode-terminal: ^0.12.0
+    ton-x: ^2.1.0
+    ts-node: ^10.9.1
+    typescript: ^4.9.5
+  peerDependencies:
+    "@ton/core": ">=0.56.0"
+    "@ton/crypto": ">=3.2.0"
+    "@ton/ton": ">=13.11.0"
+  bin:
+    blueprint: ./dist/cli/cli.js
+  languageName: unknown
+  linkType: soft
+
+"@nxfi/tact-compiler@npm:^1.3.1-0":
+  version: 1.3.1-0
+  resolution: "@nxfi/tact-compiler@npm:1.3.1-0"
+  dependencies:
+    "@ipld/dag-pb": 2.1.18
+    "@nxfi/ton-opcode": ^0.0.15-0
+    "@ton/core": 0.56.3
+    "@ton/crypto": ^3.2.0
+    blockstore-core: 1.0.5
+    change-case: ^4.1.2
+    ipfs-unixfs-importer: 9.0.10
+    meow: ^13.2.0
+    mkdirp: ^2.1.3
+    multiformats: ^13.1.0
+    ohm-js: ^17.1.0
+    path-normalize: ^6.0.13
+    prando: ^6.0.1
+    qs: ^6.12.1
+    zod: ^3.22.4
+  bin:
+    tact: bin/tact
+  checksum: 890383387910bdaf78b4540ff5ac7682ca3fdd1b872658d50fce5ff10e4803b1d7e703380ea962857b0eadf0cf10df9905aeb01aa1fb5ca19848a736875309c6
+  languageName: node
+  linkType: hard
+
+"@nxfi/ton-opcode@npm:^0.0.15-0":
+  version: 0.0.15-0
+  resolution: "@nxfi/ton-opcode@npm:0.0.15-0"
+  peerDependencies:
+    "@ton/core": ">=0.49.2"
+    "@ton/crypto": ^3.2.0
+  checksum: fff0208b22b3d54c28fbea7fd5c10aff381538ea4a22d45a9ca586bd9ea5be349ddec0c94fc33801209459f4d957dd2b8fe22596f11e7c4b9a8bb2a680ae1d41
+  languageName: node
+  linkType: hard
+
 "@orbs-network/ton-access@npm:^2.3.3":
   version: 2.3.3
   resolution: "@orbs-network/ton-access@npm:2.3.3"
@@ -153,41 +220,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tact-lang/compiler@npm:^1.3.0":
-  version: 1.3.0
-  resolution: "@tact-lang/compiler@npm:1.3.0"
-  dependencies:
-    "@ipld/dag-pb": 2.1.18
-    "@tact-lang/opcode": ^0.0.14
-    "@ton/core": 0.56.3
-    "@ton/crypto": ^3.2.0
-    blockstore-core: 1.0.5
-    change-case: ^4.1.2
-    ipfs-unixfs-importer: 9.0.10
-    meow: ^13.2.0
-    mkdirp: ^2.1.3
-    multiformats: ^13.1.0
-    ohm-js: ^17.1.0
-    path-normalize: ^6.0.13
-    prando: ^6.0.1
-    qs: ^6.12.1
-    zod: ^3.22.4
-  bin:
-    tact: bin/tact
-  checksum: d5f1b33750f852835a63f49c41ce96186e8f00b3cc8b13a0070e46441453cca984c67c3431db0d17851c1789ad8830397e4276a6965a0754193843b7e3c4d98e
-  languageName: node
-  linkType: hard
-
-"@tact-lang/opcode@npm:^0.0.14":
-  version: 0.0.14
-  resolution: "@tact-lang/opcode@npm:0.0.14"
-  peerDependencies:
-    "@ton/core": ">=0.49.2"
-    "@ton/crypto": ^3.2.0
-  checksum: 1f2ab0a9b291a995cbd14b344a3a2b795b9771d5bab770149d1076ae3b02dd0135f7982356916acfa3ba8ad1d3b6a3c866c4143efc2adaa7c828ae6bebcbdcc8
-  languageName: node
-  linkType: hard
-
 "@ton-community/func-js-bin@npm:0.4.4-newops.1":
   version: 0.4.4-newops.1
   resolution: "@ton-community/func-js-bin@npm:0.4.4-newops.1"
@@ -206,38 +238,6 @@ __metadata:
   checksum: 8a9905ba7bfb3f6615a73ef5f233d1bbfd2c55c38910cbc68ad3984547901c3bff0ffd4c39b1de97675560b9f9f00ae55e40c4ff3be829319eae81faf7a54d06
   languageName: node
   linkType: hard
-
-"@ton/blueprint@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "@ton/blueprint@workspace:."
-  dependencies:
-    "@orbs-network/ton-access": ^2.3.3
-    "@tact-lang/compiler": ^1.3.0
-    "@ton-community/func-js": ^0.7.0
-    "@ton/core": ^0.56.0
-    "@ton/crypto": ^3.2.0
-    "@ton/ton": ^13.11.0
-    "@tonconnect/sdk": ^2.2.0
-    "@types/inquirer": ^8.2.6
-    "@types/node": ^20.2.5
-    "@types/qrcode-terminal": ^0.12.0
-    arg: ^5.0.2
-    chalk: ^4.1.0
-    dotenv: ^16.1.4
-    inquirer: ^8.2.5
-    prettier: ^3.0.3
-    qrcode-terminal: ^0.12.0
-    ton-x: ^2.1.0
-    ts-node: ^10.9.1
-    typescript: ^4.9.5
-  peerDependencies:
-    "@ton/core": ">=0.56.0"
-    "@ton/crypto": ">=3.2.0"
-    "@ton/ton": ">=13.11.0"
-  bin:
-    blueprint: ./dist/cli/cli.js
-  languageName: unknown
-  linkType: soft
 
 "@ton/core@npm:0.56.3":
   version: 0.56.3
