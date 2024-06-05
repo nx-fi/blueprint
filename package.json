@@ -26,6 +26,7 @@
         "@types/node": "^20.2.5",
         "@types/qrcode-terminal": "^0.12.0",
         "prettier": "^3.0.3",
+        "release-it": "^15.5.1",
         "typescript": "^4.9.5"
     },
     "peerDependencies": {
@@ -45,6 +46,11 @@
         "qrcode-terminal": "^0.12.0",
         "ton-x": "^2.1.0",
         "ts-node": "^10.9.1"
+    },
+    "release-it": {
+        "github": {
+            "release": true
+        }
     },
     "packageManager": "yarn@3.6.1"
 }
